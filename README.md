@@ -1,6 +1,8 @@
 # AIOT-Workshop
 This repo shall contain all circuit diagrams and programs for IoTics AIoT workshop
 
+![LOGO](https://github.com/Jjateen/AIOT-Workshop/blob/main/logo.png)
+
 # Sessions to be conducted  : 
 
 - Session 1:
