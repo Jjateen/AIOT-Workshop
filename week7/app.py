@@ -31,12 +31,12 @@ def lock_door():
 
 
 # Define your Gmail credentials
-GMAIL_USER = "jeewarrior23@gmail.com"
-GMAIL_PASSWORD = "jyds agpu vlef iqcd"
+GMAIL_USER = "yours"
+GMAIL_PASSWORD = "yours"
 
 # Define your Telegram bot token and chat ID
-TELEGRAM_BOT_TOKEN = '6665724736:AAHJCuqDXg-vpiZnIi1MAXHCLbguyMRIocQ'
-TELEGRAM_CHAT_ID = '5620368308'
+TELEGRAM_BOT_TOKEN = 'yours'
+TELEGRAM_CHAT_ID = 'yours'
 
 # Create an SMTP client
 smtp_client = smtplib.SMTP("smtp.gmail.com", 587)
