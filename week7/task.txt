@@ -1,0 +1,13 @@
+I have to teach
+
+- How to setup telegram bot
+
+- How to setup gmail account for this
+
+- explaining wifi cam example
+
+- explaining the other webserver
+
+- explaining libraries and python part 
+
+- flask :)
