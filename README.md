@@ -13,11 +13,11 @@ making use of motor driver(mostly L298N) and HCSR04 sensor to make
 a simple obstacle avoidance robot(using arduino uno/nano).
 
 - Session 3:
-adding using blynk to make a home automation project, adding voice recognition(using IFTTT).
+ using blynk to make a home automation project, adding voice recognition(using IFTTT).
 
 - Session 4:
 making a wireless robot with esp32 (cam module)
-making use of its camera mode as well. (using esp as a local webserver)
+,making use of its camera mode as well. (using esp as a local webserver)
 
 - Session 5:
 Adding Computer vision to previously built robots.
