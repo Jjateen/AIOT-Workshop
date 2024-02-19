@@ -30,5 +30,5 @@ void loop() {
   if(distance <= 5) digitalWrite(buzzer,HIGH);
   else digitalWrite(buzzer,LOW);
   
-  delay(10); // Wait for 1 second before sending the next data
+  delay(10); // Wait for some time before sending the next data
 }
