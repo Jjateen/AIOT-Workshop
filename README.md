@@ -6,34 +6,10 @@ This repo shall contain all circuit diagrams and programs for IoTics AIoT worksh
 </p>
 
 # Sessions to be conducted  : 
-
-- Session 1:
-Introduction to Arduino and pointing out it's similarities with C,
-By the end of this session participants shall build their first IoT project
-using HCSR04 sensor and a buzzer/LED.
-
-- Session 2:
-making use of motor driver(mostly L298N) and HCSR04 sensor to make
-a simple obstacle avoidance robot(using arduino uno/nano).
-
-- Session 3:
- using blynk to make a home automation project, adding voice recognition(using IFTTT).
-
-- Session 4:
-making a wireless robot with esp32 (cam module)
-,making use of its camera mode as well. (using esp as a local webserver)
-
-- Session 5:
-Adding Computer vision to previously built robots.
-Like Object detection and tracking.(these projects are posted on our handle, we'll use beginner-friendly version of them)
-
-- Session 6:
-Using ML algorithms in projects. Make a IoT project-> collect sensor data-> fit in a ML alg.
-(done)
-
-- Session 7:
-making CamVisioTech Mk1 (a beginner friendly version), i.e an esp32 cam based security system.
-
-- Session 8:
-It’ll be an assignment to make something using the curriculum taught throughout these weeks. 
-
+We'll be integrating sessions the new session timeline is as follows:
+1. Using HCSR04 and buzzer with Arduino along and connecting with IoT cloud services like blynk/adafruit.
+2. Using Arduino and HCSR04 to build an obstacle avoiding robot + swapping it with Esp32cam for making a cam bot. 
+3. Intro to ML - types, IoT use cases, fitting a simple model on any sensor data.
+4. What is ANN, CNN? Using edge impulse to build an object tracking bot. Or making object detection bot.
+5. Haar Cascades who? Making CamVisioTech Mk1.
+6. Assignment session.
