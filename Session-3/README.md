@@ -148,6 +148,8 @@ We evaluate each model with **cross-validation** and **accuracy** as the primary
 
 - **[EvaluatingVariousMLModelforEnergyMeter.ipynb](./EvaluatingVariousMLModelforEnergyMeter.ipynb)**
 - **[EvaluatingVariousMLModelforEnergyMeter.py](./EvaluatingVariousMLModelforEnergyMeter.py)**
+- **[Training&TestingMLAlgorithmForEnergyMeter.ipynb](./Training&TestingMLAlgorithmForEnergyMeter.ipynb)**
+- **[Training&TestingMLAlgorithmForEnergyMeter.py](./Training&TestingMLAlgorithmForEnergyMeter.py)**
 
 ---
 
