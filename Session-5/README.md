@@ -2,8 +2,6 @@
 
 This session walks through the implementation of **real-time object detection** using Haar Cascade classifiers, with a focus on building a Wi-Fi-enabled camera system called **CamVisioTech Mk1** for smart surveillance. By the end of this tutorial, you'll have developed an AI-driven camera that recognizes objects, locks doors, and sends alerts.
 
-![Circuit Diagram](./ckt.png)
-
 ## **Project Overview**
 
 In this project, you'll create a smart surveillance system capable of:
@@ -132,6 +130,8 @@ Flash the ESP32CAM with the provided firmware in the `WifiCam/` directory:
 ### 3.4 Circuit Diagram
 
 The circuit connections are depicted in the image `ckt.png`. Ensure the wiring matches the diagram for proper functionality, especially for the buzzer and motor control.
+
+![Circuit Diagram](./ckt.png)
 
 ---
 
