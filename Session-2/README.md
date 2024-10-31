@@ -2,10 +2,6 @@
 
 Welcome to Session-2 of the AIoT Workshop! In this session, we’ll be diving into building an obstacle-avoiding robot and integrating a camera for remote viewing. By the end of this session, you'll gain experience in programming autonomous behaviors in robots and capturing video feeds with the ESP32-CAM module.
 
-<p align="center">
-  <img src="./obstacle_bot/ckt.png" alt="Obstacle Avoiding Robot Circuit">
-</p>
-
 ## Objectives
 
 1. **Obstacle Avoiding Robot**: Program an Arduino-based robot to avoid obstacles using the HC-SR04 ultrasonic sensor.
