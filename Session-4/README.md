@@ -56,7 +56,7 @@ In this part, we will use **MediaPipe** for hand gesture recognition to control 
 - **Breadboard, Jumper wires**
 
 ### 2.3 Software Requirements
-- **Python 3.x**
+- **Python 3.9**
 - **OpenCV**
 - **MediaPipe**
 - **PyFirmata** (to interface with Arduino)
@@ -114,7 +114,7 @@ The **Surveillance Bot Mk2** is a semi-autonomous robot designed for real-time o
 - **Ultrasonic Sensor** (optional for obstacle avoidance)
 
 ### 3.3 Software Requirements
-- **Python 3.x**
+- **Python 3.7 and above**
 - **Flask** (for web server)
 - **MobileNetSSD**
 - **OpenCV**
