@@ -149,7 +149,7 @@ In this project, we integrate the HC-SR04 sensor with Blynk and Adafruit IO to v
 2. **Set Up a Feed**: Create a feed for distance measurements.
 3. **Obtain Credentials**: You will need your Adafruit IO username and key for the code.
 
-> **Note**: For more detailed instructions, refer to the [Step-by-step.pdf](./blynk_adafruit/Step-by-step.pdf) provided in this session.
+> **Note**: For more detailed instructions, refer to the [Blynk Tutorial.pdf](./blynk_adafruit/Blynk%20Tutorial.pdf) and [Step-by-step.pdf](./blynk_adafruit/Step-by-step.pdf) provided in this session.
 
 ---
 
