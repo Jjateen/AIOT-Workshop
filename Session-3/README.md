@@ -71,76 +71,51 @@ Here, we describe the ML algorithms applied in this session, including equations
 Logistic Regression is a classification algorithm that predicts the probability that an input belongs to a particular class. It uses the **Sigmoid function** to map predicted values to probabilities.
 
 #### Sigmoid Function
-\[
-\sigma(z) = \frac{1}{1 + e^{-z}}
-\]
+![Sigmoid Function](https://latex.codecogs.com/svg.image?\sigma(z)&space;=&space;\frac{1}{1&plus;e^{-z}})
+
 where \( z = w \cdot x + b \), with \( w \) as weights, \( x \) as input, and \( b \) as the bias term.
 
 #### Binary Cross-Entropy Loss
 For Logistic Regression, the model optimizes the binary cross-entropy loss:
-\[
-L(y, \hat{y}) = - \frac{1}{N} \sum_{i=1}^N \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]
-\]
-where \( y \) is the true label, \( \hat{y} \) is the predicted probability, and \( N \) is the number of samples.
+![Binary Cross-Entropy](https://latex.codecogs.com/svg.image?L(y,&space;\hat{y})&space;=&space;-&space;\frac{1}{N}&space;\sum_{i=1}^N&space;\left[&space;y_i&space;\log(\hat{y}_i)&space;&plus;&space;(1&space;-&space;y_i)&space;\log(1&space;-&space;\hat{y}_i)&space;\right])
 
 ### 2. Linear Discriminant Analysis (LDA)
 
 LDA aims to maximize separability between classes by projecting data onto a lower-dimensional space where class separation is maximized.
 
 #### Discriminant Function
-The LDA model calculates a discriminant score for each class:
-\[
-d_k(x) = x^T \Sigma^{-1} \mu_k - \frac{1}{2} \mu_k^T \Sigma^{-1} \mu_k + \log(P_k)
-\]
-where \( x \) is the input feature vector, \( \Sigma \) is the covariance matrix, \( \mu_k \) is the mean vector for class \( k \), and \( P_k \) is the prior probability of class \( k \).
+![Discriminant Function](https://latex.codecogs.com/svg.image?d_k(x)&space;=&space;x^T&space;\Sigma^{-1}&space;\mu_k&space;-&space;\frac{1}{2}&space;\mu_k^T&space;\Sigma^{-1}&space;\mu_k&space;&plus;&space;\log(P_k))
 
 ### 3. K-Nearest Neighbors (KNN)
 
 K-Nearest Neighbors classifies data points based on the majority class of their \( k \) nearest neighbors.
 
 #### Euclidean Distance
-The Euclidean distance between points helps find nearest neighbors:
-\[
-d(x_i, x_j) = \sqrt{\sum_{k=1}^{n} (x_{ik} - x_{jk})^2}
-\]
-where \( x_i \) and \( x_j \) are two data points, and \( n \) is the number of features.
+![Euclidean Distance](https://latex.codecogs.com/svg.image?d(x_i,&space;x_j)&space;=&space;\sqrt{\sum_{k=1}^{n}&space;(x_{ik}&space;-&space;x_{jk})^2})
 
 ### 4. Decision Tree Classifier (CART)
 
 The Decision Tree Classifier splits data based on features that maximize class separation.
 
 #### Gini Impurity
-The model uses Gini impurity to measure the quality of splits:
-\[
-Gini = 1 - \sum_{i=1}^C p_i^2
-\]
-where \( p_i \) is the probability of selecting a sample with class \( i \) in a subset, and \( C \) is the number of classes.
+![Gini Impurity](https://latex.codecogs.com/svg.image?Gini&space;=&space;1&space;-&space;\sum_{i=1}^C&space;p_i^2)
 
 ### 5. Naive Bayes (NB)
 
 Naive Bayes applies Bayes' theorem, assuming feature independence.
 
 #### Bayes' Theorem
-The conditional probability of class \( C_k \) given input \( x \) is:
-\[
-P(C_k | x) = \frac{P(x | C_k) \cdot P(C_k)}{P(x)}
-\]
+![Bayes Theorem](https://latex.codecogs.com/svg.image?P(C_k&space;|&space;x)&space;=&space;\frac{P(x&space;|&space;C_k)&space;\cdot&space;P(C_k)}{P(x)})
 
 ### 6. Support Vector Machine (SVM)
 
 SVM identifies the hyperplane that maximizes margin between classes.
 
 #### Margin Optimization
-To maximize the margin:
-\[
-\min \frac{1}{2} ||w||^2 \quad \text{subject to } y_i (w \cdot x_i + b) \geq 1
-\]
+![Margin Optimization](https://latex.codecogs.com/svg.image?\min&space;\frac{1}{2}&space;||w||^2&space;\quad&space;\text{subject&space;to&space;}&space;y_i&space;(w&space;\cdot&space;x_i&space;&plus;&space;b)&space;\geq&space;1)
 
 #### Hinge Loss Function
-SVM minimizes the hinge loss:
-\[
-L(y, \hat{y}) = \max(0, 1 - y \cdot \hat{y})
-\]
+![Hinge Loss](https://latex.codecogs.com/svg.image?L(y,&space;\hat{y})&space;=&space;\max(0,&space;1&space;-&space;y&space;\cdot&space;\hat{y}))
 
 ---
 
@@ -157,9 +132,8 @@ Let \( k \) be the number of folds, and \( D \) be the dataset. Cross-validation
    - Use \( D_i \) as the validation set and \( D - D_i \) as the training set.
    - Calculate the accuracy \( A_i \) on \( D_i \).
 3. The final accuracy is the average over all folds:
-\[
-\text{Accuracy} = \frac{1}{k} \sum_{i=1}^k A_i
-\]
+   
+   ![Cross-Validation Accuracy](https://latex.codecogs.com/svg.image?\text{Accuracy}&space;=&space;\frac{1}{k}&space;\sum_{i=1}^k&space;A_i)
 
 Cross-validation provides a more generalized evaluation by leveraging the entire dataset for both training and validation.
 
