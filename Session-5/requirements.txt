@@ -1,0 +1,11 @@
+opencv-python
+mediapipe
+numpy
+face_recognition
+Flask
+datetime
+pyserial
+smtplib
+python-telegram-bot
+aiohttp
+requests
