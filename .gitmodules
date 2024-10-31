@@ -1,0 +1,6 @@
+[submodule "Session-4/SurveillanceBotMk2"]
+	path = Session-4/SurveillanceBotMk2
+	url = git@github.com:Jjateen/SurveillanceBotMk2.git
+[submodule "Session-4/PTI-mediapipe"]
+	path = Session-4/PTI-mediapipe
+	url = git@github.com:Jjateen/PTI-mediapipe.git
