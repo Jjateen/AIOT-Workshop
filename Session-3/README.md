@@ -71,51 +71,52 @@ Here, we describe the ML algorithms applied in this session, including equations
 Logistic Regression is a classification algorithm that predicts the probability that an input belongs to a particular class. It uses the **Sigmoid function** to map predicted values to probabilities.
 
 #### Sigmoid Function
-![Sigmoid Function](https://latex.codecogs.com/svg.image?\sigma(z)&space;=&space;\frac{1}{1&plus;e^{-z}})
+![Sigmoid Function](https://latex.codecogs.com/png.image?\dpi{120}\color{White}\sigma(z)&space;=&space;\frac{1}{1&plus;e^{-z}})
 
-where \( z = w \cdot x + b \), with \( w \) as weights, \( x \) as input, and \( b \) as the bias term.
+This is where `z = w.x + b`, with `w` as weights, `x` as input, and `b` as the bias term.
 
 #### Binary Cross-Entropy Loss
 For Logistic Regression, the model optimizes the binary cross-entropy loss:
-![Binary Cross-Entropy](https://latex.codecogs.com/svg.image?L(y,&space;\hat{y})&space;=&space;-&space;\frac{1}{N}&space;\sum_{i=1}^N&space;\left[&space;y_i&space;\log(\hat{y}_i)&space;&plus;&space;(1&space;-&space;y_i)&space;\log(1&space;-&space;\hat{y}_i)&space;\right])
+
+![Binary Cross-Entropy](https://latex.codecogs.com/png.image?\dpi{120}\color{White}L(y,&space;\hat{y})&space;=&space;-&space;\frac{1}{N}&space;\sum_{i=1}^N&space;\left[&space;y_i&space;\log(\hat{y}_i)&space;&plus;&space;(1&space;-&space;y_i)&space;\log(1&space;-&space;\hat{y}_i)&space;\right])
 
 ### 2. Linear Discriminant Analysis (LDA)
 
 LDA aims to maximize separability between classes by projecting data onto a lower-dimensional space where class separation is maximized.
 
 #### Discriminant Function
-![Discriminant Function](https://latex.codecogs.com/svg.image?d_k(x)&space;=&space;x^T&space;\Sigma^{-1}&space;\mu_k&space;-&space;\frac{1}{2}&space;\mu_k^T&space;\Sigma^{-1}&space;\mu_k&space;&plus;&space;\log(P_k))
+![Discriminant Function](https://latex.codecogs.com/png.image?\dpi{120}\color{White}d_k(x)&space;=&space;x^T&space;\Sigma^{-1}&space;\mu_k&space;-&space;\frac{1}{2}&space;\mu_k^T&space;\Sigma^{-1}&space;\mu_k&space;&plus;&space;\log(P_k))
 
 ### 3. K-Nearest Neighbors (KNN)
 
 K-Nearest Neighbors classifies data points based on the majority class of their \( k \) nearest neighbors.
 
 #### Euclidean Distance
-![Euclidean Distance](https://latex.codecogs.com/svg.image?d(x_i,&space;x_j)&space;=&space;\sqrt{\sum_{k=1}^{n}&space;(x_{ik}&space;-&space;x_{jk})^2})
+![Euclidean Distance](https://latex.codecogs.com/png.image?\dpi{120}\color{White}d(x_i,&space;x_j)&space;=&space;\sqrt{\sum_{k=1}^{n}&space;(x_{ik}&space;-&space;x_{jk})^2})
 
 ### 4. Decision Tree Classifier (CART)
 
 The Decision Tree Classifier splits data based on features that maximize class separation.
 
 #### Gini Impurity
-![Gini Impurity](https://latex.codecogs.com/svg.image?Gini&space;=&space;1&space;-&space;\sum_{i=1}^C&space;p_i^2)
+![Gini Impurity](https://latex.codecogs.com/png.image?\dpi{120}\color{White}Gini&space;=&space;1&space;-&space;\sum_{i=1}^C&space;p_i^2)
 
 ### 5. Naive Bayes (NB)
 
 Naive Bayes applies Bayes' theorem, assuming feature independence.
 
 #### Bayes' Theorem
-![Bayes Theorem](https://latex.codecogs.com/svg.image?P(C_k&space;|&space;x)&space;=&space;\frac{P(x&space;|&space;C_k)&space;\cdot&space;P(C_k)}{P(x)})
+![Bayes Theorem](https://latex.codecogs.com/png.image?\dpi{120}\color{White}P(C_k&space;|&space;x)&space;=&space;\frac{P(x&space;|&space;C_k)&space;\cdot&space;P(C_k)}{P(x)})
 
 ### 6. Support Vector Machine (SVM)
 
 SVM identifies the hyperplane that maximizes margin between classes.
 
 #### Margin Optimization
-![Margin Optimization](https://latex.codecogs.com/svg.image?\min&space;\frac{1}{2}&space;||w||^2&space;\quad&space;\text{subject&space;to&space;}&space;y_i&space;(w&space;\cdot&space;x_i&space;&plus;&space;b)&space;\geq&space;1)
+![Margin Optimization](https://latex.codecogs.com/png.image?\dpi{120}\color{White}\min&space;\frac{1}{2}&space;||w||^2&space;\quad&space;\text{subject&space;to&space;}&space;y_i&space;(w&space;\cdot&space;x_i&space;&plus;&space;b)&space;\geq&space;1)
 
 #### Hinge Loss Function
-![Hinge Loss](https://latex.codecogs.com/svg.image?L(y,&space;\hat{y})&space;=&space;\max(0,&space;1&space;-&space;y&space;\cdot&space;\hat{y}))
+![Hinge Loss](https://latex.codecogs.com/png.image?\dpi{120}\color{White}L(y,&space;\hat{y})&space;=&space;\max(0,&space;1&space;-&space;y&space;\cdot&space;\hat{y}))
 
 ---
 
@@ -125,15 +126,15 @@ To ensure balanced training, we use **StratifiedKFold cross-validation**. This a
 
 ### Cross-Validation Formula
 
-Let \( k \) be the number of folds, and \( D \) be the dataset. Cross-validation involves:
+Let `k` be the number of folds, and `D` be the dataset. Cross-validation involves:
 
-1. Splitting \( D \) into \( k \) equally-sized folds \( D_1, D_2, \ldots, D_k \).
-2. For each \( i \)-th fold:
-   - Use \( D_i \) as the validation set and \( D - D_i \) as the training set.
-   - Calculate the accuracy \( A_i \) on \( D_i \).
+1. Splitting `D` into `k` equally-sized folds ![D_1](https://latex.codecogs.com/png.image?\dpi{120}\color{White}D_{1}) and ![D_2](https://latex.codecogs.com/png.image?\dpi{120}\color{White}D_{2}), ..., ![D_k](https://latex.codecogs.com/png.image?\dpi{120}\color{White}D_{k}).
+2. For each ![i](https://latex.codecogs.com/png.image?\dpi{120}\color{White}i)-th fold:
+   - Use ![D_i](https://latex.codecogs.com/png.image?\dpi{120}\color{White}D_{i}) as the validation set and ![D-D_i](https://latex.codecogs.com/png.image?\dpi{120}\color{White}D-D_{i}) as the training set.
+   - Calculate the accuracy ![A_i](https://latex.codecogs.com/png.image?\dpi{120}\color{White}A_{i}) on ![D_i](https://latex.codecogs.com/png.image?\dpi{120}\color{White}D_{i}).
 3. The final accuracy is the average over all folds:
    
-   ![Cross-Validation Accuracy](https://latex.codecogs.com/svg.image?\text{Accuracy}&space;=&space;\frac{1}{k}&space;\sum_{i=1}^k&space;A_i)
+   ![Cross-Validation Accuracy](https://latex.codecogs.com/png.image?\dpi{120}\color{White}\text{Accuracy}&space;=&space;\frac{1}{k}&space;\sum_{i=1}^k&space;A_i)
 
 Cross-validation provides a more generalized evaluation by leveraging the entire dataset for both training and validation.
 
@@ -145,12 +146,9 @@ We evaluate each model with **cross-validation** and **accuracy** as the primary
 
 ### Code Files
 
-- **[EvaluatingVariousMLModelforEnergyMeter.ipynb](./EvaluatingVariousMLModelforEnergyMeter.ipynb)**: Code for loading, visualizing, and evaluating models.
-- **[Training&TestingMLAlgorithmForEnergyMeter.ipynb](./Training&TestingMLAlgorithmForEnergyMeter.ipynb)**: Training and evaluating the final model.
-- **[finalized_model.pkl](./finalized_model.pkl)**: The saved final model.
+- **[EvaluatingVariousMLModelforEnergyMeter.ipynb](./EvaluatingVariousMLModelforEnergyMeter.ipynb)**
+- **[EvaluatingVariousMLModelforEnergyMeter.py](./EvaluatingVariousMLModelforEnergyMeter.py)**
 
 ---
 
-## Summary
-
-In this session, we covered essential ML concepts and demonstrated the application of supervised learning models to IoT data. By training ML models on labeled energy meter data, we enable predictive capabilities that enhance IoT systems' intelligence, improving efficiency and automation in real-world applications.
+This detailed README provides foundational knowledge and hands-on practice with ML algorithms, setting the stage for further exploration in the field of IoT-enhanced intelligence.
