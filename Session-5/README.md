@@ -212,6 +212,6 @@ This project is an excellent stepping stone for AI-powered security systems, pro
 
 ## **License**
 
-This project is licensed under the [MIT License](../LICENSE).
+This project is licensed under the [Apache 2.0 License](../LICENSE).
 
 Feel free to modify and contribute!
