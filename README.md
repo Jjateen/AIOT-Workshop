@@ -51,8 +51,8 @@ Welcome to the IoTics AIoT Workshop repository! This repository contains all the
 
 ### Session-4: Advanced ML Concepts and Surveillance Bot
 - **Resources**:
-  - [PTI-mediapipe](./Session-4/PTI-mediapipe/)
-  - [SurveillanceBotMk2](./Session-4/SurveillanceBotMk2/)
+  - [PTI-mediapipe](https://github.com/Jjateen/PTI-mediapipe)
+  - [SurveillanceBotMk2](https://github.com/Jjateen/SurveillanceBotMk2)
 - **Content**: 
   - Exploring deeper concepts in ML, including Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN).
   - Using MediaPipe for hand tracking and building a surveillance bot with object detection capabilities.
