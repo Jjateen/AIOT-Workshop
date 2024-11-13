@@ -4,7 +4,7 @@ Welcome to Session 6 of the AIoT Workshop! This is an assignment session where y
 
 ## Instructions
 ### 0. Star the Repository
-
+Click on the Star button at the top-right of this page.
 ### 1. Fork the Repository
 
 To get started, **fork this repository**. This will create a copy of the workshop materials in your GitHub account, allowing you to make changes and create your own project.
