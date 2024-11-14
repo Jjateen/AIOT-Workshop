@@ -5,12 +5,16 @@ Welcome to Session 6 of the AIoT Workshop! This is an assignment session where y
 ## Instructions
 ### 0. Star the Repository
 Click on the Star button at the top-right of this page.
-### 1. Fork the Repository
+### 1. Fork the Repository and clone it
 
 To get started, **fork this repository**. This will create a copy of the workshop materials in your GitHub account, allowing you to make changes and create your own project.
 
 1. Click on the **Fork** button at the top-right of this page.
 2. Select your GitHub account to create the fork.
+3. Clone your repo
+      ```bash
+   git clone https://github.com/<your_github_ID>/AIOT-Workshop.git
+   ```
 
 ### 2. Create Your Project for Session 6
 
