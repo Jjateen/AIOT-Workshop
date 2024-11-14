@@ -1,70 +1,64 @@
-# Session 6: Assignment and Project Submission
+# Color Tracking Robotic Gripper
 
-Welcome to Session 6 of the AIoT Workshop! This is an assignment session where you'll get to apply all that you've learned and demonstrate your project-building skills. Follow the steps below to complete and submit your assignment successfully.
+## Description
+This project involves a color tracking robotic gripper capable of distinguishing between two sets of colors. It can sort items based on their color, placing one set on its left and the other on its right. This functionality is particularly useful for sorting harmful trash where human interference can pose health risks. The project is completely automatic.
 
-## Instructions
+## Features
+- Automatic color detection and sorting
+- Distinguishes between two sets of colors
+- Places items on the left or right based on their color
+- Can be used for sorting harmful trash to prevent health issues
+- Integrates with an Arduino for controlling the robotic arm
 
-### 1. Fork the Repository
+## Installation and Setup
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/color-tracking-robotic-gripper.git
+    cd color-tracking-robotic-gripper
+    ```
 
-To get started, **fork this repository**. This will create a copy of the workshop materials in your GitHub account, allowing you to make changes and create your own project.
+2. Install the required Python libraries:
+    ```sh
+    pip install opencv-python pyserial numpy
+    ```
 
-1. Click on the **Fork** button at the top-right of this page.
-2. Select your GitHub account to create the fork.
+3. Upload the Arduino code to the Arduino Uno:
+    ```sh
+    # Use the Arduino IDE to upload the provided sketch to the Arduino Uno.
+    ```
 
-### 2. Create Your Project for Session 6
+## Usage
+1. Initialize the ESP32-CAM and host a local webserver to stream images.
+2. Obtain the IP address of the ESP32-CAM from the serial monitor.
+3. Use the IP address in the Python script to grab frames from the local webserver.
+4. Run the Python script in VS Code to process the frames and find contours for the set color ranges.
 
-Now that you have your own copy of the repository, it's time to work on your project for Session 6. For this session, your task is to design and implement a unique project that demonstrates your understanding of the workshop materials. Your project can include elements such as IoT connectivity, object detection, hand tracking, or other AI/ML-based implementations learned during the sessions.
+## Hardware Requirements
+- 3 MG955 servo motors
+- 1 SG servo motor
+- 3D printed model of the robotic arm
+- Arduino Uno
+- ESP32-CAM
+- Board for programming the ESP32-CAM via USB cable
+- Laptop for image processing
 
-- **Suggested Areas to Explore:**
-  - Sensor-based automation and control using IoT platforms
-  - AI-driven features like object detection or tracking
-  - Integration with IoT cloud services for real-time monitoring
-  - Creative applications using Arduino, ESP32, or other hardware discussed
+## Software Requirements
+- Python
+- OpenCV
+- pySerial
+- NumPy
+- Arduino Servo Library
 
-### 3. Create a Separate Branch
+## Contributing
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
 
-After deciding on your project, create a separate branch based on your team name. This will help keep your project organized and distinct.
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-1. Open your terminal and navigate to your forked repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b <your-team-name>
-   ```
-
-### 4. Commit and Push Your Project
-
-Once you’re happy with your project, it’s time to add your work to the branch and push it to GitHub.
-
-1. **Commit** all your project files to the new branch:
-   ```bash
-   git add .
-   git commit -m "Add Session 6 Project"
-   ```
-2. **Push** your changes to GitHub:
-   ```bash
-   git push origin <your-team-name>
-   ```
-
-### 5. Submit a Pull Request (PR)
-
-After pushing your project to your branch, submit a pull request to the main repository for review.
-
-1. Go to the **original repository** (this repository).
-2. Click on **Pull Requests** and select **New Pull Request**.
-3. Choose **compare across forks** if necessary, then select your forked repository and your branch.
-4. Add a clear title and description to your pull request, then click **Create Pull Request**.
-
-### 6. Review and Judging
-
-Your submission will be reviewed by the workshop instructors according to our judging parameters. We’re looking for:
-
-- **Creativity and Originality**: How unique and innovative is your project?
-- **Code Quality and Organization**: How well-structured and readable is your code?
-- **Functionality**: Does the project work as intended and meet the requirements?
-- **Presentation**: Is the project documented effectively for understanding and reproducibility?
-
-The **best project** will be merged into the main branch, and the rest will remain in their respective branches based on team names. The creator of the selected project will receive special recognition, and their project will be credited in the main repository.
-
----
-
-Happy Making!
+## Acknowledgements
+- Thanks to the open-source community for providing resources and libraries.
+- Special thanks to Jayesh for the project idea and implementation.
