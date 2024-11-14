@@ -36,6 +36,8 @@ After deciding on your project, create a separate branch based on your team name
 
 Once you’re happy with your project, it’s time to add your work to the branch and push it to GitHub.
 
+0. Write good **documentaion** of your project
+
 1. **Commit** all your project files to the new branch:
    ```bash
    git add .
