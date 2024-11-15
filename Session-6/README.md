@@ -3,7 +3,7 @@
 ## Description
 The **Color Tracking Robotic Gripper** is an automated system designed to identify and sort objects based on their color. Equipped with computer vision capabilities, this robotic arm can distinguish between two color categories, sorting objects to either the left or right. This functionality is particularly useful in scenarios where sorting of hazardous materials is necessary, reducing human health risks. The system integrates Python, OpenCV, Arduino, and ESP32-CAM for reliable and efficient color-specific object handling in both industrial and domestic applications.
 
-**Note:** This project was selected as the top project in the IoTics AIoT Workshop.
+**Note:** This project was selected as the top project in the IoTics AIoT Workshop and was also exhibited in the IoT Exhibition of the *Introduction to IoT* course, guided by Dr. Rashmi Ranjan Kumar.
 
 ## Features
 - **Automatic Color Detection and Sorting**: Detects objects based on specified color ranges and sorts them accordingly.
@@ -93,7 +93,7 @@ Check out the project in action: [Demo Video](https://drive.google.com/file/d/10
 IoT-1st-Year
 
 ### Members
-- **Jayesh Thakare**: Programming and Design - +91 8446374356
+- **[Jayesh Thakare](https://github.com/Yorha-7)**: Programming and Design - +91 8446374356
 - **Kartik Agrawal**: Demonstrator - +91 9259322930
 - **Nimesh Suryawanshi**: Assembly - +91 7489230310
 - **Vivek Kumar**: Hardware Management - +91 6393265832
