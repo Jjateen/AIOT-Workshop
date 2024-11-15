@@ -1,88 +1,105 @@
 # Color Tracking Robotic Gripper
 
 ## Description
-This project involves a color tracking robotic gripper capable of distinguishing between two sets of colors. It can sort items based on their color, placing one set on its left and the other on its right. This functionality is particularly useful for sorting harmful trash where human interference can pose health risks. The project is completely automatic.
+The **Color Tracking Robotic Gripper** is an automated system designed to identify and sort objects based on their color. Equipped with computer vision capabilities, this robotic arm can distinguish between two color categories, sorting objects to either the left or right. This functionality is particularly useful in scenarios where sorting of hazardous materials is necessary, reducing human health risks. The system integrates Python, OpenCV, Arduino, and ESP32-CAM for reliable and efficient color-specific object handling in both industrial and domestic applications.
+
+**Note:** This project was selected as the top project in the IoTics AIoT Workshop.
 
 ## Features
-- Automatic color detection and sorting
-- Distinguishes between two sets of colors
-- Places items on the left or right based on their color
-- Can be used for sorting harmful trash to prevent health issues
-- Integrates with an Arduino for controlling the robotic arm
+- **Automatic Color Detection and Sorting**: Detects objects based on specified color ranges and sorts them accordingly.
+- **Dual-Sided Sorting**: Places items on the left or right based on color.
+- **Applications in Hazardous Material Sorting**: Minimizes human interaction with potentially harmful materials.
+- **ESP32-CAM and Arduino Integration**: Uses an ESP32-CAM for real-time color detection and an Arduino to control the robotic arm's movements.
+- **3D Printed Components**: The arm’s structure is custom-designed and 3D-printed for modular assembly and robustness.
+
+## Demo Video
+Check out the project in action: [Demo Video](https://drive.google.com/file/d/10mPuvANaVOIOEYqjE63bNqFpUy-5URYO/view?usp=sharing)
+
+<p align="center">
+  <img src="./final_setup.png" alt="final setup">
+</p>
 
 ## Installation and Setup
-1. Clone the repository:
+
+1. **Clone the Repository**:
     ```sh
     git clone https://github.com/your-username/color-tracking-robotic-gripper.git
     cd color-tracking-robotic-gripper
     ```
 
-2. Install the required Python libraries:
+2. **Install Required Libraries**:
     ```sh
     pip install opencv-python pyserial numpy
     ```
 
-3. Upload the Arduino code to the Arduino Uno:
-    ```sh
-    # Use the Arduino IDE to upload the provided sketch to the Arduino Uno.
-    ```
-
-## Usage
-1. Initialize the ESP32-CAM and host a local webserver to stream images.
-2. Obtain the IP address of the ESP32-CAM from the serial monitor.
-3. Use the IP address in the Python script to grab frames from the local webserver.
-4. Run the Python script in VS Code to process the frames and find contours for the set color ranges.
+3. **Upload Arduino Code**:
+    - Use the Arduino IDE to upload the provided sketch to the Arduino Uno.
 
 ## Hardware Requirements
-- 3 MG955 servo motors
-- 1 SG servo motor
-- 3D printed model of the robotic arm
-- Arduino Uno
-- ESP32-CAM
-- Board for programming the ESP32-CAM via USB cable
-- Laptop for image processing
+- **3 MG995 Servomotors**: For shoulder, elbow, and wrist movements.
+- **1 SG90 Servo**: For gripper control.
+- **ESP32-CAM**: For real-time image capturing.
+- **Arduino Uno**: Microcontroller to coordinate servos based on color detection.
+- **3D-Printed Robotic Arm**: Includes STL and STEP files.
+- **Programming Board for ESP32-CAM**: To connect ESP32-CAM to your computer.
+- **Laptop**: For running the Python script and image processing.
 
-## Software Requirements
-- Python
-- OpenCV
-- pySerial
-- NumPy
-- Arduino Servo Library
+### Included Files
+- **CAD Models**:
+  - *RA-2.0 MK2 (Test Assembly)*: Provided in both STL and STEP formats.
+    ![cad_model](./gripper_stl.jpg)
+- **ESP32-CAM Code**: Located in the `CameraWebServer` folder.
+- **Python Code**:
+  - `colortrackingtuner.py`: Script for calibrating color detection.
+  - `iotProjectUpgraded.py`: Main script for color tracking and robotic arm control.
+- **Images for Reference**:
+  - `final_setup.png`: Displays the assembled system setup.
+  - `gripper_stl.jpg`: Shows the 3D model of the gripper.
+  - `flowchart.jpg`: System flowchart for process overview.
+- **Sample Video**:
+  - `WhatsApp Video 2024-11-14 at 22.50.57_e83a663f.mp4`: Demonstrates the robotic arm in operation.
+
+## Usage
+
+1. **Set Up ESP32-CAM**:
+   - Power on and connect the ESP32-CAM to your computer using the programming board.
+   - Flash the provided ESP32-CAM code to set up the local web server.
+   - Open the Arduino serial monitor to obtain the IP address of the ESP32-CAM.
+
+2. **Run Python Script**:
+   - Edit `iotProjectUpgraded.py` to update the IP address for the ESP32-CAM.
+   - Start the Python script in a compatible IDE (e.g., VS Code) to capture video frames.
+   - The script processes the frames to detect objects based on color and commands the Arduino to move the robotic arm.
+
+3. **Sorting Operation**:
+   - Ensure all connections are secure and power on the Arduino.
+   - Place objects in view of the ESP32-CAM. The robotic arm will automatically sort items to the left or right based on color.
+
+## Procedure Outline
+
+- **Vision Processing**: 
+  - The ESP32-CAM captures real-time video and streams it to the Python program.
+  - The Python script applies color filtering (using HSV color space) to detect and locate objects.
   
-## Software Details
-Python: Version 3.7(Used). Compatible with 3.9 (Tested)
-## Procedure
-- Setting Up the ESP32-CAM
-  - Power On: Connect your ESP32-CAM to your computer using the programming board and USB cable.
-  - Flash the Code: Upload the provided ESP32-CAM sketch to set up the web server.
-  - Get the IP Address: Open the serial monitor in the Arduino IDE and note the IP address displayed.
+- **Robotic Arm Control**:
+  - Detected color and position data are sent to the Arduino, which moves the servos to align the arm with the object and perform grasping and placement actions.
 
-- Running the Python Script
-  - Edit the Script: Open the Python script and update the IP address to match the one displayed by your ESP32-CAM.
-  - Start the Script: Run the Python script to start grabbing frames from the ESP32-CAM's web server.  
-  - Monitor Output: The script will process the frames to detect the specified colors and send commands to the Arduino to move the robotic arm.
-
-- Operating the Robotic Gripper
-  - Initialization: Ensure all connections are secure and power on the Arduino.
-  - Start Sorting: Place objects within the camera’s view. The gripper will automatically sort the items based on their color.
+- **System Flowchart**:
+  - Refer to `flowchart.jpg` for a visual overview of the sorting process.
 
 ## Team Details
 
 ### Team Name
-Iot-1st-Year
+IoT-1st-Year
 
 ### Members
-- **Member 1**: Jayesh Thakare (Programing and Designing) - Contact: +91 8446374356 
-- **Member 2**: Kartik Agrawal (Demonstrator) - Contact: +91 9259322930
-- **Member 3**: Nimesh Suryawanshi (Assembly) - Contact: +91 7489230310
-- **Member 4**: Vivek Kumar (Hardware Management) - Contact: +91 6393265832
+- **Jayesh Thakare**: Programming and Design - +91 8446374356
+- **Kartik Agrawal**: Demonstrator - +91 9259322930
+- **Nimesh Suryawanshi**: Assembly - +91 7489230310
+- **Vivek Kumar**: Hardware Management - +91 6393265832
 
-### Contact
-- **Email(Jayesh Thakare)**: scientistn1420@gmail.com
+**Email**: [Jayesh Thakare](mailto:scientistn1420@gmail.com)
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-## Acknowledgements
-- Thanks to the open-source community for providing resources and libraries.
-- Special thanks to Jayesh for the project idea and implementation.
+## Acknowledgments
+- Thanks to the open-source community for resources and libraries.
+- Special thanks to Jayesh for conceiving and leading the project’s implementation. 
