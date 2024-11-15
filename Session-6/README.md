@@ -48,26 +48,23 @@ This project involves a color tracking robotic gripper capable of distinguishing
 - pySerial
 - NumPy
 - Arduino Servo Library
+  
+##Software Details
+Python: Version 3.7(Used). Compatible with 3.9 (Tested)
+
 ## Team Details
 
 ### Team Name
 Iot-1st-Year
 
 ### Members
-- **Member 1**: Jayesh Thakare (Programing and Designing) - Contact: +91 8446374356
+- **Member 1**: Jayesh Thakare (Programing and Designing) - Contact: +91 8446374356 
 - **Member 2**: Kartik Agrawal (Demonstrator) - Contact: +91 9259322930
 - **Member 3**: Nimesh Suryawanshi (Assembly) - Contact: +91 7489230310
 - **Member 4**: Vivek Kumar (Hardware Management) - Contact: +91 6393265832
 
 ### Contact
 - **Email(Jayesh Thakare)**: scientistn1420@gmail.com
-
-## Contributing
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
