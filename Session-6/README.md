@@ -128,10 +128,7 @@ Refer to the images below for guidance on how the final setup should look.
 #### Image 1: Final Setup - Top View
 ![Final Setup - Top View](FINAL%20IMAGE%20SETUP%20-%201.jpg)
 
-#### Image 2: Final Setup - Side View
-![Final Setup - Side View](FINAL%20IMAGE%20SETUP%20-%202.jpg)
-
-These images provide a reference for assembling the robot components, including the LDR placement, motor driver setup, and sensor positioning.
+This image provide a reference for assembling the robot components, including the LDR placement, motor driver setup, and sensor positioning.
 
 ### Applications
 
