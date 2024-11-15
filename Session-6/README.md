@@ -3,8 +3,6 @@
 Welcome to Session 6 of the AIoT Workshop! This is an assignment session where you'll get to apply all that you've learned and demonstrate your project-building skills. Follow the steps below to complete and submit your assignment successfully.
 
 ## Instructions
-### 0. Star the Repository
-![fork_n_star](./fork_star.png)
 
 Click on the Star button at the top-right of this page.
 ### 1. Fork the Repository and clone it
