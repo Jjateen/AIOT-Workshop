@@ -51,7 +51,7 @@ This project involves a color tracking robotic gripper capable of distinguishing
 ## Team Details
 
 ### Team Name
-Your Team Name
+Iot-1st-Year
 
 ### Members
 - **Member 1**: Jayesh Thakare (Programing and Designing) - Contact: +91 8446374356
