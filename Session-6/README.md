@@ -48,6 +48,19 @@ This project involves a color tracking robotic gripper capable of distinguishing
 - pySerial
 - NumPy
 - Arduino Servo Library
+## Team Details
+
+### Team Name
+Your Team Name
+
+### Members
+- **Member 1**: Jayesh Thakare (Programing and Designing) - Contact: +91 8446374356
+- **Member 2**: Kartik Agrawal (Demonstrator) - Contact: +91 9259322930
+- **Member 3**: Nimesh Suryawanshi (Assembly) - Contact: +91 7489230310
+- **Member 4**: Vivek Kumar (Hardware Management) - Contact: +91 6393265832
+
+### Contact
+- **Email(Jayesh Thakare)**: scientistn1420@gmail.com
 
 ## Contributing
 1. Fork the repository.
