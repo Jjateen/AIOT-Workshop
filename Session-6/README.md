@@ -49,8 +49,22 @@ This project involves a color tracking robotic gripper capable of distinguishing
 - NumPy
 - Arduino Servo Library
   
-##Software Details
+## Software Details
 Python: Version 3.7(Used). Compatible with 3.9 (Tested)
+## Procedure
+- Setting Up the ESP32-CAM
+  - Power On: Connect your ESP32-CAM to your computer using the programming board and USB cable.
+  - Flash the Code: Upload the provided ESP32-CAM sketch to set up the web server.
+  - Get the IP Address: Open the serial monitor in the Arduino IDE and note the IP address displayed.
+
+- Running the Python Script
+  - Edit the Script: Open the Python script and update the IP address to match the one displayed by your ESP32-CAM.
+  - Start the Script: Run the Python script to start grabbing frames from the ESP32-CAM's web server.  
+  - Monitor Output: The script will process the frames to detect the specified colors and send commands to the Arduino to move the robotic arm.
+
+- Operating the Robotic Gripper
+  - Initialization: Ensure all connections are secure and power on the Arduino.
+  - Start Sorting: Place objects within the camera’s view. The gripper will automatically sort the items based on their color.
 
 ## Team Details
 
