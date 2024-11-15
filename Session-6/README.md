@@ -57,7 +57,7 @@ Check out the project in action: [Demo Video](https://drive.google.com/file/d/10
   - `gripper_stl.jpg`: Shows the 3D model of the gripper.
   - `flowchart.jpg`: System flowchart for process overview.
 - **Sample Video**:
-  - `WhatsApp Video 2024-11-14 at 22.50.57_e83a663f.mp4`: Demonstrates the robotic arm in operation.
+  - `demo.mp4`: Demonstrates the robotic arm in operation.
 
 ## Usage
 
