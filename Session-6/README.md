@@ -1,77 +1,83 @@
-# Session 6: Assignment and Project Submission
+# IoT-Based Light Tracking Robot
 
-Welcome to Session 6 of the AIoT Workshop! This is an assignment session where you'll get to apply all that you've learned and demonstrate your project-building skills. Follow the steps below to complete and submit your assignment successfully.
+This project, created by **[Vasu Agarwal](https://github.com/Vasu007-tech)**, **Lakshya Ojha**, **Prayag Srivastava**, and **Muffaddal Saify**, is an IoT-enabled Light Tracking Robot that autonomously detects and follows light sources using Light Dependent Resistors (LDRs). The system leverages an Arduino microcontroller and various sensors to track light while collecting environmental data such as temperature and humidity. This project was exhibited at the IoT Exhibition for the **Introduction to IoT (ECL 104)** course, under the guidance of **Dr. Rashmi Ranjan Kumar**.
 
-## Instructions
-
-Click on the Star button at the top-right of this page.
-### 1. Fork the Repository and clone it
-
-To get started, **fork this repository**. This will create a copy of the workshop materials in your GitHub account, allowing you to make changes and create your own project.
-
-1. Click on the **Fork** button at the top-right of this page.
-2. Select your GitHub account to create the fork.
-3. Clone your repo
-      ```bash
-   git clone https://github.com/<your_github_ID>/AIOT-Workshop.git
-   ```
-
-### 2. Create Your Project for Session 6
-
-Now that you have your own copy of the repository, it's time to work on your project for Session 6. For this session, your task is to design and implement a unique project that demonstrates your understanding of the workshop materials. Your project can include elements such as IoT connectivity, object detection, hand tracking, or other AI/ML-based implementations learned during the sessions.
-
-- **Suggested Areas to Explore:**
-  - Sensor-based automation and control using IoT platforms
-  - AI-driven features like object detection or tracking
-  - Integration with IoT cloud services for real-time monitoring
-  - Creative applications using Arduino, ESP32, or other hardware discussed
-
-### 3. Create a Separate Branch
-
-After deciding on your project, create a separate branch based on your team name. This will help keep your project organized and distinct.
-
-1. Open your terminal and navigate to your forked repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b <your-team-name>
-   ```
-
-### 4. Commit and Push Your Project
-
-Once you’re happy with your project, it’s time to add your work to the branch and push it to GitHub.
-
-0. Write good **documentaion** of your project
-
-1. **Commit** all your project files to the new branch:
-   ```bash
-   git add .
-   git commit -m "Add Session 6 Project"
-   ```
-2. **Push** your changes to GitHub:
-   ```bash
-   git push origin <your-team-name>
-   ```
-
-### 5. Submit a Pull Request (PR)
-
-After pushing your project to your branch, submit a pull request to the main repository for review.
-
-1. Go to the **original repository** (this repository).
-2. Click on **Pull Requests** and select **New Pull Request**.
-3. Choose **compare across forks** if necessary, then select your forked repository and your branch.
-4. Add a clear title and description to your pull request, then click **Create Pull Request**.
-
-### 6. Review and Judging
-
-Your submission will be reviewed by the workshop instructors according to our judging parameters. We’re looking for:
-
-- **Creativity and Originality**: How unique and innovative is your project?
-- **Code Quality and Organization**: How well-structured and readable is your code?
-- **Functionality**: Does the project work as intended and meet the requirements?
-- **Presentation**: Is the project documented effectively for understanding and reproducibility?
-
-The **best project** will be merged into the main branch, and the rest will remain in their respective branches based on team names. The creator of the selected project will receive special recognition, and their project will be credited in the main repository.
+## Table of Contents
+- [System Overview](#system-overview)
+- [Components Required](#components-required)
+- [Circuit Diagram](#circuit-diagram)
+- [Assembly and Setup](#assembly-and-setup)
+- [Code and Operation](#code-and-operation)
+- [Final Setup Images](#final-setup-images)
+- [Applications](#applications)
+- [Future Enhancements](#future-enhancements)
 
 ---
 
-Happy Making!
+### System Overview
+
+The Light Tracking Robot consists of four main modules:
+1. **Sensing Module**: Uses LDRs to detect ambient light and a DHT11 sensor for temperature and humidity.
+2. **Control Module**: An Arduino microcontroller processes the sensor data and determines the movement direction.
+3. **Actuation Module**: An H-bridge motor driver (L298N) controls two DC motors to move the robot.
+4. **Communication Module**: An ESP8266 Wi-Fi module enables IoT capabilities, sending data to cloud platforms like ThingSpeak or Blynk.
+
+### Components Required
+
+- Arduino Uno
+- L298N Motor Driver
+- Light Dependent Resistors (LDRs) - 2 or more
+- DHT11 Temperature & Humidity Sensor
+- ESP8266 Wi-Fi Module
+- DC Motors - 2
+- Jumper Wires and Breadboard
+- Power Source (Battery Pack)
+
+### Circuit Diagram
+
+![Circuit Diagram](CIRCUIT%20DIAGRAM.jpg)
+
+The above diagram shows the connections required to set up the light-tracking robot. Ensure all connections are secure, especially for the motor driver and LDR sensors.
+
+### Assembly and Setup
+
+1. **Attach the LDR Sensors**: Place LDRs on the front corners of the robot. These sensors help detect light intensity and guide the robot towards the brightest light source.
+2. **Connect the DHT11 Sensor**: This sensor provides environmental data like temperature and humidity, which can be logged to the cloud.
+3. **Set Up the Motor Driver and Motors**: Connect the L298N driver to the motors and Arduino. The motor driver will receive signals from the Arduino to control motor speed and direction.
+4. **Integrate the ESP8266 Wi-Fi Module**: Connect the ESP8266 to enable IoT capabilities, such as data logging and remote control via cloud platforms.
+
+### Code and Operation
+
+Upload the code provided in this repository to the Arduino. The code includes:
+- Reading light intensity from the LDRs to determine the direction of movement.
+- Using the DHT11 sensor to gather environmental data.
+- Communicating with the ESP8266 to send data to cloud platforms in real time.
+
+> **Note**: Ensure you have the necessary libraries for Arduino, including `DHT.h` for the DHT11 sensor and `ESP8266WiFi.h` for Wi-Fi connectivity.
+
+### Final Setup Images
+
+Refer to the images below for guidance on how the final setup should look.
+
+#### Image 1: Final Setup - Top View
+![Final Setup - Top View](FINAL%20IMAGE%20SETUP%20-%201.jpg)
+
+#### Image 2: Final Setup - Side View
+![Final Setup - Side View](FINAL%20IMAGE%20SETUP%20-%202.jpg)
+
+These images provide a reference for assembling the robot components, including the LDR placement, motor driver setup, and sensor positioning.
+
+### Applications
+
+The Light Tracking Robot has potential applications across various fields:
+1. **Solar Panel Alignment**: Track the sun's position to optimize energy capture.
+2. **Smart Lighting**: Dynamically adjust indoor lighting for energy savings.
+3. **Autonomous Navigation**: Enable robots to follow light sources for navigation.
+4. **Agricultural Monitoring**: Use sunlight tracking to monitor crop exposure.
+
+### Future Enhancements
+
+Future improvements could include:
+- Adding obstacle avoidance sensors for improved navigation.
+- Enhancing IoT integration to support more data analytics platforms.
+- Implementing adaptive motor control for smoother light tracking.
