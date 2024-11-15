@@ -103,3 +103,4 @@ IoT-1st-Year
 ## Acknowledgments
 - Thanks to the open-source community for resources and libraries.
 - Special thanks to Jayesh for conceiving and leading the project’s implementation. 
+- Heartfelt thanks to the IoTics club team for providing such a valuable learning opportunity and fostering a supportive community.
