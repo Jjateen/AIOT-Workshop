@@ -76,8 +76,8 @@ Welcome to the IoTics AIoT Workshop repository! This repository contains all the
 ---
 
 ### Session-6: Assignment Session
-- **Resources**: [README.md](./Session-6/README.md)
-- **Content**: Wrap-up session with assignments that consolidate skills from previous sessions.
+- **Content**: The Color Tracking Robotic Gripper is an automated system designed by [Jayesh Thakare](https://github.com/Yorha-7) to identify and sort objects based on their color
+- The project was exhibited at the IoT Exhibition for the Introduction to IoT (ECL 104) course, under the guidance of Dr. Rashmi Ranjan Kumar.
 - **Objective**: Encourage hands-on practice and independent project development to solidify workshop learnings.
 
 ---
