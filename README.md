@@ -87,4 +87,9 @@ This project is licensed under the terms of the [MIT license](./LICENSE).
 
 ---
 
+## Authors
+-  Jjateen Gundesha
+-  Mohit Talwar
+- Nirbhay Raut
+
 We hope you find this workshop resourceful and engaging as you explore the world of IoT and AI. If you find this information helpful, don't forget to star our repo!
